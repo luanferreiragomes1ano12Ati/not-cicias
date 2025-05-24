@@ -19,7 +19,7 @@ body {
     background-color: var(--almost-white);
 }
 
-body.menu-open::before {
+body.escurecer::before {
     content: "";
     position: fixed;
     height: 100vh;
@@ -39,7 +39,7 @@ body.menu-open::before {
 .header-mobíle nav {
     position: fixed;
     background-color: var(--almost-white);
-    right: 0;
+    right: -16rem;
     top: 0;
     height: 100vh;
     width: 16rem;
@@ -49,6 +49,12 @@ body.menu-open::before {
     flex-direction: column;
     padding: 1.5rem;
     gap: 1.5rem;
+
+    transition: 0.7s;
+ }
+
+ .header-mobíle nav.abrir {
+    right: 0;
  }
 
 .header-mobíle nav button {
